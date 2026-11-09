@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "BREAKPOINT — a browser-native, fully destructible first-person voxel sandbox.",
+  "description": "BREAKPOINT \u2014 a browser-native, fully destructible first-person voxel sandbox.",
   "homepage": "https://breakpoint.lou15.com",
-  "repository": { "type": "git", "url": "git+https://github.com/Louistuis/breakpoint.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louistuis/breakpoint.git"
+  },
   "scripts": {
     "dev": "vite --port 5173 --strictPort",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview --port 4173 --strictPort"
+    "preview": "vite preview --port 4173 --strictPort",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.21.0",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "@types/three": "^0.187.0",
     "typescript": "^7.0.2",
-    "vite": "^8.3.7"
+    "vite": "^8.3.7",
+    "wrangler": "^4.159.0"
   }
 }

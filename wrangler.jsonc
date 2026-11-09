@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static site: the game is served straight from Cloudflare's asset storage, no Worker code runs.
+  "name": "breakpoint",
+  "compatibility_date": "2026-11-09",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [{ "pattern": "breakpoint.lou15.com", "custom_domain": true }]
+}
