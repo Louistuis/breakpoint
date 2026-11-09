@@ -1,0 +1,11 @@
+node_modules
+dist
+.cache
+logs
+*.local
+.DS_Store
+.npmrc
+.claude/
+.impeccable/
+previews/
+.wrangler/

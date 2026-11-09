@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="theme-color" content="#0b0c0e" />
+    <title>BREAKPOINT — destructible voxel sandbox in your browser</title>
+    <meta name="description" content="BREAKPOINT is a free first-person voxel destruction sandbox that runs in the browser. Every wall, beam and pane is simulated: shoot, cut, blast and collapse a whole industrial district." />
+    <meta name="keywords" content="BREAKPOINT, voxel destruction game, browser game, destruction sandbox, WebGL, Three.js, Rapier, physics sandbox" />
+    <meta name="author" content="Louistuis" />
+    <link rel="canonical" href="https://breakpoint.lou15.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BREAKPOINT" />
+    <meta property="og:title" content="BREAKPOINT — destructible voxel sandbox in your browser" />
+    <meta property="og:description" content="Shoot, cut, blast and collapse a fully simulated voxel district. Six tools, real structural collapse, no install." />
+    <meta property="og:url" content="https://breakpoint.lou15.com/" />
+    <meta property="og:image" content="https://breakpoint.lou15.com/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BREAKPOINT — destructible voxel sandbox in your browser" />
+    <meta name="twitter:description" content="Shoot, cut, blast and collapse a fully simulated voxel district. Six tools, real structural collapse, no install." />
+    <meta name="twitter:image" content="https://breakpoint.lou15.com/og.jpg" />
+    <link rel="author" href="https://github.com/Louistuis/breakpoint" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "BREAKPOINT",
+        "url": "https://breakpoint.lou15.com/",
+        "description": "A first-person voxel destruction sandbox that runs in the browser.",
+        "genre": ["Sandbox", "Simulation"],
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "image": "https://breakpoint.lou15.com/og.jpg",
+        "codeRepository": "https://github.com/Louistuis/breakpoint",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c0e'/%3E%3Cpath d='M6 6h9l-3 9h-6zM17 6h9v9h-12z M6 17h5l-2 9h-3zM13 17h13v9h-15z' fill='%23ff6a1a'/%3E%3C/svg%3E" />
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b0c0e; overflow: hidden; }
+      #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; outline: none; }
+      #ui-root { position: fixed; inset: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" tabindex="0"></canvas>
+    <div id="ui-root"></div>
+    <noscript>
+      <p style="position: fixed; inset: 0; display: grid; place-items: center; margin: 0; color: #d8d9dc; font: 16px system-ui, sans-serif; text-align: center">
+        BREAKPOINT needs JavaScript and WebGL 2. Source: <a style="color: #ff6a1a" href="https://github.com/Louistuis/breakpoint">github.com/Louistuis/breakpoint</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
